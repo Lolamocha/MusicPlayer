@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MusicPlayer</string>
+    <string name="title_song">Title Song</string>
+    <string name="artist_name">Artist Name</string>
+    <string name="album_name">Album Name</string>
+    <string name="thumbnail">TODO</string>
+    <string name="play">TODO</string>
+    <string name="song_title">Song Title</string>
+    <string name="song_img_id">TODO</string>
+    <string name="play_button">play_button</string>
+    <string name="back">TODO</string>
+
+</resources>

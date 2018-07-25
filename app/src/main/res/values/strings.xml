@@ -9,5 +9,7 @@
     <string name="song_img_id">TODO</string>
     <string name="play_button">play_button</string>
     <string name="back">TODO</string>
+    <string name="_0_11">0:11</string>
+    <string name="_1_49">-1:49</string>
 
 </resources>

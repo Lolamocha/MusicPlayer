@@ -1,20 +1,20 @@
 package com.example.android.musicplayer;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class SongActivity extends AppCompatActivity  {
+public class Detail extends AppCompatActivity  {
 
     private static final String INTENT_KEY_ARTIST = "artist";
     private static final String INTENT_KEY_ALBUM = "album";
     private static final String INTENT__KEY_TITLE = "title";
 
-    public SongActivity() {
+    public Detail() {
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,14 +29,9 @@ public class SongActivity extends AppCompatActivity  {
             }
         }
         setContentView(R.layout.activity_song);
-        ImageButton back = findViewById(R.id.back);
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent backIntent = new Intent(SongActivity.this, MainActivity.class);
-                startActivity(backIntent);
-            }
-        });
+        getSupportActionBar().setTitle("Detail");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
          final ImageButton play = findViewById(R.id.play);
          play.setOnClickListener(new View.OnClickListener() {
